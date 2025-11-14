@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap");
+
+body {
+  font-family: "Roboto Slab", serif;
+  background: linear-gradient(to top, #c75a36, #f3d3b6);
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Input Styles */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+  background-color: #e8edee;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.checkbox-group label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.2);
+}
+
+input[type="submit"] {
+  background-color: #19365c;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin-top: -2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #11243c;
+}
+
+input[type="reset"] {
+  background-color: #ffffff;
+  color: #ff0000;
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="reset"]:hover {
+  background-color: #f5afaf;
+}
+
+/* Form */
+form {
+  background-color: #ffffff;
+  max-width: 480px;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 15px #000000c0,
+     -6px -6px 8px #00000020; 
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Headings  */
+
+.title {
+  color: #153C6D;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 12px #00000090;
+  display: inline-block;
+  border-bottom: 3px solid #153C6D;
+  width: 22%;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  text-align: right;
+    font-size: 1.2rem;
+}
+
+/* Fieldsets and Legends */
+fieldset {
+  border: none;
+  border-top: 2px solid;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.circle {
+  background-color: #153c6d;
+  color: white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Small Adjustments */
+
+.hint {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="reset"] {
+  width: 95%;
+}
+textarea {
+  height: 10rem;
+  width: 93%;
+}

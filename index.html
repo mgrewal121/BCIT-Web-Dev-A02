@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <main>
+      <form action="/signup" method="get" name="HTML5 Form">
+        <h1 class="title"><b>Signup</b></h1>
+
+        <!-- 1. Account Info -->
+        <fieldset>
+          <legend><span class="circle">1</span> Account Info</legend>
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full name..."
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address..."
+            required
+          />
+
+          <label for="password"></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password..."
+            minlength="12"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{12,}$"
+            required
+          />
+          <p class="hint">
+            Minimum 12 Characters. <br />
+            Must include uppercase, lowercase, number, and symbol.
+          </p>
+        </fieldset>
+
+        <!-- 2. Dev Skills -->
+        <fieldset>
+          <legend><span class="circle">2</span> Dev Skills</legend>
+
+          <section class="group">
+            <h3>Core Languages</h3>
+            <div class="checkbox-group">
+              <label><input type="checkbox" value="HTML" /> HTML</label>
+              <label><input type="checkbox" value="CSS" /> CSS</label>
+              <label
+                ><input type="checkbox" value="JavaScript" /> JavaScript</label
+              >
+              <label><input type="checkbox" value="PHP" /> PHP</label>
+              <label><input type="checkbox" value="C#" /> C#</label>
+              <label><input type="checkbox" value="Kotlin" /> Kotlin</label>
+            </div>
+          </section>
+
+          <section class="group">
+            <h3>Libraries / Frameworks</h3>
+            <div class="checkbox-group">
+              <label><input type="checkbox" value="React" /> React</label>
+              <label><input type="checkbox" value="Angular" /> Angular</label>
+              <label><input type="checkbox" value="Vue.js" /> Vue.js</label>
+            </div>
+          </section>
+
+          <section class="group">
+            <h3>Dev Ops</h3>
+            <div class="checkbox-group">
+              <label><input type="checkbox" value="GIT" /> GIT</label>
+              <label><input type="checkbox" value="Gulp" /> Gulp</label>
+              <label><input type="checkbox" value="Docker" /> Docker</label>
+            </div>
+          </section>
+        </fieldset>
+
+        <!-- 3. Experience -->
+        <fieldset>
+          <legend><span class="circle">3</span> Experience</legend>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="experience" value="Beginner" />
+              Beginner</label
+            >
+            <label
+              ><input type="radio" name="experience" value="Intermediate" />
+              Intermediate</label
+            >
+            <label
+              ><input type="radio" name="experience" value="Advanced" />
+              Advanced</label
+            >
+          </div>
+        </fieldset>
+
+        <!-- 4. Other -->
+        <fieldset>
+          <legend><span class="circle">4</span> Other</legend>
+
+          <label for="heard-about">How did you hear about us?</label>
+          <select id="heard-about" name="heard-about">
+            <option value="" disabled selected>Please Select...</option>
+            <optgroup label="Person">
+              <option value="Friend">Friend</option>
+              <option value="Family">Family</option>
+              <option value="Colleague">Colleague</option>
+            </optgroup>
+            <optgroup label="Media">
+              <option value="Internet">Internet</option>
+              <option value="Radio">Radio</option>
+              <option value="TV">TV</option>
+              <option value="Newspaper">Newspaper</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="Magic">Magic!</option>
+              <option value="Other">Other...</option>
+            </optgroup>
+          </select>
+
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <!-- 5. Additional Details (Hidden) -->
+        <fieldset id="extra-details" style="display: none">
+          <legend><span class="circle">5</span> Additional Details</legend>
+          <label for="other-details">Please provide additional details:</label>
+          <textarea
+            id="other-details"
+            name="other-details"
+            rows="4"
+            cols="40"
+          ></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear Form" />
+      </form>
+      <footer>© 2025 Mohan Grewal</footer>
+    </main>
+  </body>
+</html>
