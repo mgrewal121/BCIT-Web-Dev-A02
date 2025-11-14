@@ -2,7 +2,9 @@
 
 body {
   font-family: "Roboto Slab", serif;
-  background: linear-gradient(to top, #c75a36, #f3d3b6);
+   background: 
+    radial-gradient(circle, #ffffff79, transparent 60%), 
+    linear-gradient(to bottom, #003b87eb, #001252);
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
